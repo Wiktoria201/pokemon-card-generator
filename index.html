@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Card Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <main class="main-section">
+      <div class="card-container" id="card-container">
+        <div class="circle main-color"></div>
+        <div class="hp-amount-container">
+          <p class="round hp-amount" id="pokemon-hp-el"></p>
+        </div>
+
+        <div class="pokemon-image-container">
+          <img id="img" class="pokemon-image" />
+        </div>
+        <div class="card-info-container">
+          <h2 class="card-name" id="pokemon-name-el"></h2>
+          <div class="properties-container" id="properties-container"></div>
+          <div class="stats-container" id="stats-container">
+            <div>
+              <p id="stat-attack"></p>
+              <p>attack</p>
+            </div>
+            <div>
+              <p id="stat-defense"></p>
+              <p>defense</p>
+            </div>
+            <div>
+              <p id="stat-speed"></p>
+              <p>speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn" id="btn-generate">Generate</button>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

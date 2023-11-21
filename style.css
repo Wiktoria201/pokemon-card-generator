@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.round {
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+.main-color {
+  background-color: rgb(68, 255, 47);
+  color: #fff;
+}
+
+.body {
+  background-color: #eff3ff;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  gap: 40px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  top: -300px;
+  left: -75px;
+  z-index: 0;
+}
+
+.pokemon-image-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.pokemon-image {
+  width: 200px;
+  height: 189px;
+  position: absolute;
+  top: -91px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.hp-amount-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-right: 30px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.hp-amount {
+  background-color: #fff;
+}
+
+.card-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-name {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.properties-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 50px;
+}
+
+.btn {
+  background-color: #101010;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
